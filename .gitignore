@@ -1,0 +1,17 @@
+# Raw data (too large for git)
+data/raw_mat/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Trained models (regenerate by running pipeline)
+models/*.pkl
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

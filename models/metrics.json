@@ -1,0 +1,51 @@
+{
+  "results": [
+    {
+      "model": "XGBoost",
+      "train_r2": 0.9994,
+      "test_r2": 0.8001,
+      "test_mae": 9.08,
+      "test_rmse": 14.43,
+      "overfit_gap": 0.1993
+    },
+    {
+      "model": "Random Forest",
+      "train_r2": 0.9974,
+      "test_r2": 0.7873,
+      "test_mae": 9.28,
+      "test_rmse": 14.88,
+      "overfit_gap": 0.2101
+    },
+    {
+      "model": "HistGradientBoosting",
+      "train_r2": 0.997,
+      "test_r2": 0.7843,
+      "test_mae": 9.53,
+      "test_rmse": 14.99,
+      "overfit_gap": 0.2127
+    },
+    {
+      "model": "SVR",
+      "train_r2": 0.9922,
+      "test_r2": 0.3284,
+      "test_mae": 23.91,
+      "test_rmse": 26.44,
+      "overfit_gap": 0.6638
+    },
+    {
+      "model": "Linear Regression",
+      "train_r2": 0.9575,
+      "test_r2": -4.0688,
+      "test_mae": 59.85,
+      "test_rmse": 72.65,
+      "overfit_gap": 5.0263
+    }
+  ],
+  "champion": "XGBoost",
+  "test_battery": "B0006",
+  "train_batteries": [
+    "B0005",
+    "B0007",
+    "B0018"
+  ]
+}

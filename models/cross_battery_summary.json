@@ -1,0 +1,244 @@
+{
+  "summary": [
+    {
+      "model": "HistGradientBoosting",
+      "mean_test_rmse": 23.3175,
+      "std_test_rmse": 7.141846312404097,
+      "mean_test_r2": 0.48285,
+      "mean_test_mae": 19.32,
+      "rmse_per_fold": {
+        "B0005": 17.77,
+        "B0006": 14.99,
+        "B0007": 32.21,
+        "B0018": 28.3
+      }
+    },
+    {
+      "model": "XGBoost",
+      "mean_test_rmse": 23.555,
+      "std_test_rmse": 9.19959374103009,
+      "mean_test_r2": 0.512775,
+      "mean_test_mae": 19.409999999999997,
+      "rmse_per_fold": {
+        "B0005": 17.24,
+        "B0006": 14.43,
+        "B0007": 38.21,
+        "B0018": 24.34
+      }
+    },
+    {
+      "model": "Random Forest",
+      "mean_test_rmse": 23.6475,
+      "std_test_rmse": 7.435493847082384,
+      "mean_test_r2": 0.476675,
+      "mean_test_mae": 19.655,
+      "rmse_per_fold": {
+        "B0005": 18.26,
+        "B0006": 14.88,
+        "B0007": 33.47,
+        "B0018": 27.98
+      }
+    },
+    {
+      "model": "SVR",
+      "mean_test_rmse": 32.715,
+      "std_test_rmse": 5.704368939681234,
+      "mean_test_r2": -0.02557499999999996,
+      "mean_test_mae": 28.415,
+      "rmse_per_fold": {
+        "B0005": 27.76,
+        "B0006": 26.44,
+        "B0007": 37.07,
+        "B0018": 39.59
+      }
+    },
+    {
+      "model": "Linear Regression",
+      "mean_test_rmse": 42.51,
+      "std_test_rmse": 18.169166188903663,
+      "mean_test_r2": -1.0654000000000001,
+      "mean_test_mae": 35.6875,
+      "rmse_per_fold": {
+        "B0005": 25.01,
+        "B0006": 72.65,
+        "B0007": 32.59,
+        "B0018": 39.79
+      }
+    }
+  ],
+  "champion": "HistGradientBoosting",
+  "fold_details": [
+    {
+      "held_out_battery": "B0005",
+      "Linear Regression": {
+        "model": "Linear Regression",
+        "train_r2": 0.8769,
+        "test_r2": 0.5217,
+        "test_mae": 21.71,
+        "test_rmse": 25.01,
+        "overfit_gap": 0.3552
+      },
+      "Random Forest": {
+        "model": "Random Forest",
+        "train_r2": 0.9921,
+        "test_r2": 0.7449,
+        "test_mae": 16.72,
+        "test_rmse": 18.26,
+        "overfit_gap": 0.2472
+      },
+      "XGBoost": {
+        "model": "XGBoost",
+        "train_r2": 0.9889,
+        "test_r2": 0.7726,
+        "test_mae": 15.44,
+        "test_rmse": 17.24,
+        "overfit_gap": 0.2162
+      },
+      "SVR": {
+        "model": "SVR",
+        "train_r2": 0.9543,
+        "test_r2": 0.4107,
+        "test_mae": 25.32,
+        "test_rmse": 27.76,
+        "overfit_gap": 0.5436
+      },
+      "HistGradientBoosting": {
+        "model": "HistGradientBoosting",
+        "train_r2": 0.9962,
+        "test_r2": 0.7586,
+        "test_mae": 15.44,
+        "test_rmse": 17.77,
+        "overfit_gap": 0.2376
+      }
+    },
+    {
+      "held_out_battery": "B0006",
+      "Linear Regression": {
+        "model": "Linear Regression",
+        "train_r2": 0.9575,
+        "test_r2": -4.0688,
+        "test_mae": 59.85,
+        "test_rmse": 72.65,
+        "overfit_gap": 5.0263
+      },
+      "Random Forest": {
+        "model": "Random Forest",
+        "train_r2": 0.9974,
+        "test_r2": 0.7873,
+        "test_mae": 9.28,
+        "test_rmse": 14.88,
+        "overfit_gap": 0.2101
+      },
+      "XGBoost": {
+        "model": "XGBoost",
+        "train_r2": 0.9994,
+        "test_r2": 0.8001,
+        "test_mae": 9.08,
+        "test_rmse": 14.43,
+        "overfit_gap": 0.1993
+      },
+      "SVR": {
+        "model": "SVR",
+        "train_r2": 0.9922,
+        "test_r2": 0.3284,
+        "test_mae": 23.91,
+        "test_rmse": 26.44,
+        "overfit_gap": 0.6638
+      },
+      "HistGradientBoosting": {
+        "model": "HistGradientBoosting",
+        "train_r2": 0.997,
+        "test_r2": 0.7843,
+        "test_mae": 9.53,
+        "test_rmse": 14.99,
+        "overfit_gap": 0.2127
+      }
+    },
+    {
+      "held_out_battery": "B0007",
+      "Linear Regression": {
+        "model": "Linear Regression",
+        "train_r2": 0.8549,
+        "test_r2": 0.4952,
+        "test_mae": 25.82,
+        "test_rmse": 32.59,
+        "overfit_gap": 0.3597
+      },
+      "Random Forest": {
+        "model": "Random Forest",
+        "train_r2": 0.9964,
+        "test_r2": 0.4673,
+        "test_mae": 27.8,
+        "test_rmse": 33.47,
+        "overfit_gap": 0.5291
+      },
+      "XGBoost": {
+        "model": "XGBoost",
+        "train_r2": 0.9731,
+        "test_r2": 0.3057,
+        "test_mae": 32.33,
+        "test_rmse": 38.21,
+        "overfit_gap": 0.6674
+      },
+      "SVR": {
+        "model": "SVR",
+        "train_r2": 0.9828,
+        "test_r2": 0.3465,
+        "test_mae": 29.14,
+        "test_rmse": 37.07,
+        "overfit_gap": 0.6363
+      },
+      "HistGradientBoosting": {
+        "model": "HistGradientBoosting",
+        "train_r2": 0.9966,
+        "test_r2": 0.5068,
+        "test_mae": 27.52,
+        "test_rmse": 32.21,
+        "overfit_gap": 0.4897
+      }
+    },
+    {
+      "held_out_battery": "B0018",
+      "Linear Regression": {
+        "model": "Linear Regression",
+        "train_r2": 0.9132,
+        "test_r2": -1.2097,
+        "test_mae": 35.37,
+        "test_rmse": 39.79,
+        "overfit_gap": 2.1228
+      },
+      "Random Forest": {
+        "model": "Random Forest",
+        "train_r2": 0.9962,
+        "test_r2": -0.0928,
+        "test_mae": 24.82,
+        "test_rmse": 27.98,
+        "overfit_gap": 1.089
+      },
+      "XGBoost": {
+        "model": "XGBoost",
+        "train_r2": 0.979,
+        "test_r2": 0.1727,
+        "test_mae": 20.79,
+        "test_rmse": 24.34,
+        "overfit_gap": 0.8063
+      },
+      "SVR": {
+        "model": "SVR",
+        "train_r2": 0.9627,
+        "test_r2": -1.1879,
+        "test_mae": 35.29,
+        "test_rmse": 39.59,
+        "overfit_gap": 2.1506
+      },
+      "HistGradientBoosting": {
+        "model": "HistGradientBoosting",
+        "train_r2": 0.9971,
+        "test_r2": -0.1183,
+        "test_mae": 24.79,
+        "test_rmse": 28.3,
+        "overfit_gap": 1.1154
+      }
+    }
+  ]
+}
