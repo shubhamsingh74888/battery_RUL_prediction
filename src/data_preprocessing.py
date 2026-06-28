@@ -1,16 +1,3 @@
-"""
-data_preprocessing.py
-----------------------
-Loads and prepares battery_features.csv for model training.
-
-UPDATES vs original:
-- Rolling features (capacity_3cy_slope, voltage_mean_3cy_avg) now included
-- LEAKAGE_COLUMNS updated to exclude rolling capacity slope only if it
-  mathematically restates the target (it doesn't — it captures trend,
-  not absolute level, so it's kept as a feature)
-- Cleaner reporting of feature set used
-"""
-
 import os
 import sys
 import pandas as pd

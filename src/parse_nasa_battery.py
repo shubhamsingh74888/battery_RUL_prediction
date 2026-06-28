@@ -1,15 +1,3 @@
-"""
-parse_nasa_battery.py
-----------------------
-Converts NASA PCoE Li-ion Battery Aging .mat files into a clean flat
-CSV suitable for ML feature engineering.
-
-FIX vs original: B0007 EOL fallback is now explicitly logged so you
-can verify whether its labels are computed from a real 1.4 Ah crossing
-or from the fallback (last cycle). If fallback triggers, a warning is
-printed because those RUL labels are approximate.
-"""
-
 import argparse
 import os
 import sys

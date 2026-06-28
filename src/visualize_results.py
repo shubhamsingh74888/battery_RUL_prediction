@@ -1,16 +1,3 @@
-"""
-visualize_results.py
----------------------
-Generates all plots for the Battery RUL project.
-
-Plots produced:
-  1. capacity_degradation.png   — capacity fade curves for all 4 batteries
-  2. feature_correlations.png   — heatmap of feature vs RUL correlations
-  3. rmse_by_fold.png           — per-battery RMSE grouped bar chart
-  4. actual_vs_predicted.png    — scatter plot for champion model on B0006
-  5. model_comparison.png       — mean RMSE bar chart across all models
-"""
-
 import os
 import sys
 import json

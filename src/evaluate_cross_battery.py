@@ -1,15 +1,3 @@
-"""
-evaluate_cross_battery.py
----------------------------
-Leave-one-battery-out cross-validation across all 4 batteries.
-Each battery takes one turn as the completely held-out test set.
-
-UPDATES vs original:
-- HistGradientBoosting added as 5th model
-- GridSearchCV tuning applied per fold (not just once globally)
-- Champion reported as "effectively tied" if top-2 RMSE within 1 cycle
-"""
-
 import json
 import os
 import sys

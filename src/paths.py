@@ -1,10 +1,3 @@
-"""
-paths.py
---------
-Single source of truth for every file path used in this project.
-Anchors all paths to the project root so scripts run correctly
-from any working directory.
-"""
 from pathlib import Path
 
 # battery-rul/src/paths.py -> .parent -> src/ -> .parent -> battery-rul/

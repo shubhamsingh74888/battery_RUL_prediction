@@ -1,17 +1,5 @@
 #!/usr/bin/env bash
-# run_pipeline.sh
-# ---------------------------------------------------------------
-# Runs the full Battery RUL pipeline in correct order.
-# Usage:
-#   ./run_pipeline.sh              # full run
-#   ./run_pipeline.sh --skip-parse # skip .mat parsing if CSV exists
-# ---------------------------------------------------------------
-
 set -euo pipefail
-# set -e  → exit immediately if any command fails
-# set -u  → treat unset variables as errors
-# set -o pipefail → catch errors inside pipes too
-
 # ── Resolve project root from this script's location ──────────
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG_FILE="${SCRIPT_DIR}/pipeline_$(date +%Y%m%d_%H%M%S).log"
